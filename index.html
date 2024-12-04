@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="controls">
+            <div class="instructions">
+                <h2>Управление:</h2>
+                <p>← → : Движение влево/вправо</p>
+                <p>↑ : Поворот</p>
+                <p>↓ : Ускорить падение</p>
+                <p>Пробел : Мгновенное падение</p>
+            </div>
+            <button id="startButton">Начать игру</button>
+            <button id="pauseButton">Пауза</button>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
